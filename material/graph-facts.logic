@@ -1,0 +1,32 @@
++Instruction(x), +Name(x:"root").
++Instruction(x), +Name(x:"a").
++Instruction(x), +Name(x:"b").
++Instruction(x), +Name(x:"c").
++Instruction(x), +Name(x:"d").
++Instruction(x), +Name(x:"e").
++Instruction(x), +Name(x:"f").
++Instruction(x), +Name(x:"g").
++Instruction(x), +Name(x:"h").
++Instruction(x), +Name(x:"exception1").
++Instruction(x), +Name(x:"exception2").
++Instruction(x), +Name(x:"r1").
++Instruction(x), +Name(x:"r2").
+
++Next(x,y) <- Name(x:"root"), Name(y:"a").
++Next(x,y) <- Name(x:"root"), Name(y:"b").
++Next(x,y) <- Name(x:"a"), Name(y:"c").
++Next(x,y) <- Name(x:"b"), Name(y:"d").
++Next(x,y) <- Name(x:"b"), Name(y:"e").
++Next(x,y) <- Name(x:"e"), Name(y:"f").
++Next(x,y) <- Name(x:"d"), Name(y:"g").
++Next(x,y) <- Name(x:"exception1"), Name(y:"f").
++Next(x,y) <- Name(x:"exception1"), Name(y:"exception2").
++Next(x,y) <- Name(x:"c"), Name(y:"h").
++Next(x,y) <- Name(x:"h"), Name(y:"r1").
++Next(x,y) <- Name(x:"g"), Name(y:"r2").
++Next(x,y) <- Name(x:"f"), Name(y:"r1").
++Next(x,y) <- Name(x:"f"), Name(y:"r2").
+
++Entry(x) <- Name(x:"root").
++ReturnInstruction(x) <- Name(x:"r1").
++ReturnInstruction(x) <- Name(x:"r2").

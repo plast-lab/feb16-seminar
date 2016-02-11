@@ -1,0 +1,5 @@
+// Declarations
+Instruction(x), Name(x:n) -> string(n).
+Next(x,y) -> Instruction(x), Instruction(y).
+Entry(x) -> Instruction(x).
+ReturnInstruction(x) -> Instruction(x).

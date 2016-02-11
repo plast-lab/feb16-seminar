@@ -1,0 +1,4 @@
+graphs, projectname
+graph-decls.logic, active
+graph-facts.logic, inactive
+graph.logic, active
