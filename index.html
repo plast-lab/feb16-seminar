@@ -80,7 +80,7 @@ bloxbatch -db GRAPH -addBlock -file graph.logic</pre></div>
 <span class="pl-s"><span class="pl-pds">'</span>_a(h,v) &lt;- VarPointsTo(_, h, _, v).</span>
 <span class="pl-s">_b[v] = cnt &lt;- agg&lt;&lt;cnt = count()&gt;&gt; _a(_, v).</span>
 <span class="pl-s">_c[] = m &lt;- agg&lt;&lt;m = max(cnt)&gt;&gt; _b[_] = cnt.</span>
-<span class="pl-s">_d(v, c) &lt;- _b[v] = cnt, _c[] = cnt.<span class="pl-pds">'</span></span> \
+<span class="pl-s">_d(v, cnt) &lt;- _b[v] = cnt, _c[] = cnt.<span class="pl-pds">'</span></span> \
 -print _d</pre></div>
       </section>
     </div>
