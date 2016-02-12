@@ -66,9 +66,10 @@ bloxbatch -db graph-db -addBlock -file graph-decls.logic
 bloxbatch -db graph-db -execute -file graph-facts.logic
 bloxbatch -db graph-db -addBlock -file graph.logic</pre></div>
 
-<p>Otherwise, issue the following command:</p>
+<p>Otherwise, issue the following commands:</p>
 
-<div class="highlight highlight-source-shell"><pre>bloxbatch -script graph.lb</pre></div>
+<div class="highlight highlight-source-shell"><pre>bloxcompiler compileProject graph.project -outDir build
+bloxbatch -script graph.lb</pre></div>
 
 <h3>
 <a id="aggregation" class="anchor" href="#aggregation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aggregation</h3>
